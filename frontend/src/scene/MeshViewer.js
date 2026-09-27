@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { assetUrl } from '../utils/api.js';
 
 export class MeshViewer {
   constructor(scene, onModelLoaded = null, onModelError = null) {
@@ -17,8 +18,8 @@ export class MeshViewer {
     // Inject Scene Lighting required for Polycam PBR meshes
     this.initLighting();
 
-    // Automatically load /room.glb from public directory
-    this.loadGLTF('/room.glb');
+    // Automatically load room.glb from public directory
+    this.loadGLTF(assetUrl('/room.glb'));
   }
 
   initLighting() {

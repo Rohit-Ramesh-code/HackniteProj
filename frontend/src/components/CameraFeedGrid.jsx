@@ -18,13 +18,13 @@ import {
   MailCheck,
   Sparkles
 } from 'lucide-react';
-import { inferenceAPI } from '../utils/api';
+import { inferenceAPI, assetUrl } from '../utils/api';
 
 const ROOM_CCTV_FEEDS = [
   { 
     id: 1, 
     name: 'North Hallway Exit Portal (Theft)', 
-    videoSrc: '/videos/room_theft_incident.mp4', 
+    videoSrc: assetUrl('/videos/room_theft_incident.mp4'), 
     sourceFrame: 'input/images/frame_0001.jpg',
     threatLevel: 'HIGH', 
     threatType: 'theft',
@@ -34,7 +34,7 @@ const ROOM_CCTV_FEEDS = [
   { 
     id: 2, 
     name: 'Mid-Corridor Checkpoint (Breach)', 
-    videoSrc: '/videos/room_perimeter_breach.mp4', 
+    videoSrc: assetUrl('/videos/room_perimeter_breach.mp4'), 
     sourceFrame: 'input/images/frame_0025.jpg',
     threatLevel: 'HIGH', 
     threatType: 'perimeter_breach',
@@ -44,7 +44,7 @@ const ROOM_CCTV_FEEDS = [
   { 
     id: 3, 
     name: 'Access Control Portal (Loitering)', 
-    videoSrc: '/videos/room_suspicious_loitering.mp4', 
+    videoSrc: assetUrl('/videos/room_suspicious_loitering.mp4'), 
     sourceFrame: 'input/images/frame_0050.jpg',
     threatLevel: 'MEDIUM', 
     threatType: 'loitering',
@@ -54,7 +54,7 @@ const ROOM_CCTV_FEEDS = [
   { 
     id: 4, 
     name: 'North Hallway (Normal Traffic)', 
-    videoSrc: '/videos/room_normal_traffic.mp4', 
+    videoSrc: assetUrl('/videos/room_normal_traffic.mp4'), 
     sourceFrame: 'input/images/frame_0001.jpg',
     threatLevel: 'LOW', 
     threatType: 'normal_traffic',
@@ -64,7 +64,7 @@ const ROOM_CCTV_FEEDS = [
   { 
     id: 5, 
     name: 'Mid-Corridor (Security Patrol)', 
-    videoSrc: '/videos/room_security_patrol.mp4', 
+    videoSrc: assetUrl('/videos/room_security_patrol.mp4'), 
     sourceFrame: 'input/images/frame_0025.jpg',
     threatLevel: 'LOW', 
     threatType: 'routine_patrol',
@@ -74,7 +74,7 @@ const ROOM_CCTV_FEEDS = [
   { 
     id: 6, 
     name: 'South Wing (Clear Monitored Zone)', 
-    videoSrc: '/videos/room_clear_hallway.mp4', 
+    videoSrc: assetUrl('/videos/room_clear_hallway.mp4'), 
     sourceFrame: 'input/images/frame_0075.jpg',
     threatLevel: 'LOW', 
     threatType: 'clear_zone',
