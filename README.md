@@ -1,6 +1,9 @@
 # AegisSpatial - 3D Spatial Security Optimization, Synthetic Surveillance Generation & Gemini AI Intelligence System
 
+> 🚀 **Live Demo**: **[https://rohit-ramesh-code.github.io/HackniteProj/](https://rohit-ramesh-code.github.io/HackniteProj/)**
+
 **AegisSpatial** is an end-to-end intelligent spatial security and surveillance optimization platform. It combines **3D Environment Modeling (GLB)**, **3D Greedy Set Cover Camera Optimization**, **Room-Conditioned Synthetic Video Generation**, **Google Gemini Multimodal AI Vision Analysis**, and an interactive **Gemini AI Surveillance Copilot Chatbot** into a unified modern command center.
+
 
 ---
 
