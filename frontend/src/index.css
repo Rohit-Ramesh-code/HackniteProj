@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-cyber-dark text-slate-100;
+  }
+}
+
+.glass-panel {
+  background: rgba(18, 24, 36, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-accent {
+  background: rgba(10, 13, 20, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+}
+
+.glow-accent {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.glow-alert {
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.4);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 13, 20, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.5);
+}
+
+@keyframes pulse-scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-scan {
+  animation: pulse-scan 3s linear infinite;
+}
